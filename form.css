@@ -1,0 +1,25 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+}
+
+.main-container{
+    padding: 4rem;
+
+    .main{
+        max-width: 33rem;
+        margin-left: auto;
+    }
+  
+}
+
+.main-aside{
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    .aside{
+        max-width: 31rem;
+
+    }
+}    
