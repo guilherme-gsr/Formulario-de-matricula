@@ -9,7 +9,7 @@
 
     .main{
         max-width: 33rem;
-        margin-left: auto;
+        margin-inline: auto;
     }
   
 }
@@ -20,6 +20,7 @@
 
     .aside{
         max-width: 31rem;
+        margin-inline: auto;
 
     }
 }    
