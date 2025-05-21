@@ -1,0 +1,10 @@
+.kid-information {
+  border: none;
+
+  .name {
+    margin-block: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+}

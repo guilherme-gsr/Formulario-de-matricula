@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(./form.css);
+@import url(./kid-info.css);
+@import url(./components.css);
 :root {
   --brand-light: #f67841;
   --brand-mid: #f3541c;
@@ -15,9 +17,9 @@
   --surface-disabled: #e7e5e4;
 
   --stroke-default: #d6d3d1;
-  --stroke-default: #f3541c;
+  --stroke-highlight: #f3541c;
 
-  --semantic-error: #dc2626;
+  --semantic-error: #dc 2626;
 
   --supporting-orange: #f9a474;
   --supporting-yellow: #fedf6f;
@@ -45,8 +47,8 @@
 
 .heading2 {
   font-size: 24px;
-  line-height: 120%;
-  font-weight: 700;
+  line-height: 125%;
+  font-weight: 600;
 }
 
 .heading3 {
@@ -57,6 +59,12 @@
 
 .heading4 {
   font-size: 16px;
-  line-height: 120%;
-  font-weight: 700;
+  line-height: 125%;
+  font-weight: 400;
+}
+
+.heading5{
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 600;
 }
