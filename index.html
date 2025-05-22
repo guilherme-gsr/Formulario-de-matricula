@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Formulario</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./global/style.css" />
   </head>
   <body>
     <section class="container">
@@ -31,71 +31,83 @@
           <form>
             <section>
               <fieldset class="kid-information">
-                <legend>Informações da criança</legend>
+                <legend class="heading5">Informações da criança</legend>
 
-                <div class="name">
-                  <label for="name">Nome Completo</label>
+                <div class="name flex-info">
+                  <label for="name" class="label-1">Nome Completo</label>
                   <input type="text" name="name" class="hover" />
                 </div>
 
-                <div class="birth-date">
-                  <label for="birth-date">Data de nascimento</label>
+                <div class="birth-date flex-info">
+                  <label for="birth-date" class="label-1">Data de nascimento</label>
                   <input type="date" name="birth-date" class="hover" />
                 </div>
 
-                <div class="sexo">
-                  <label for="sexo">Sexo</label>
-                  <select name="sexo">
+                <div class="sexo flex-info">
+                  <label for="sexo" class="label-1">Sexo</label>
+                  <select name="sexo" class="hover">
                     <option value="masculino" name="sexo">Masculino</option>
                     <option value="feminino" name="sexo">Feminino</option>
                   </select>
                 </div>
 
-                <div class="medical-info">
-                  <label for="medical-info">Informações médicas</label>
-                  <textarea name="medica-info" id=""></textarea>
+                <div class="medical-info flex-info">
+                  <label for="medical-info" class="label-1">Informações médicas</label>
+                  <textarea name="medica-info" class="hover text-area" placeholder="Informações medicas"></textarea>
                 </div>
 
-                <div class="certificat-birth">
-                  <label for="certificat-birth">Certidão de nascimento</label>
-                  <input type="file" name="certificat-birth" />
+                <div class="certificat-birth flex-info">
+                  <p class="label-1">Certidão de nascimento</p>
+                  
+                  
+                  <label for="birth-box" class="label-1 label-birth">
+                    <input type="file" id="birth-box" name="certificat-birth" class="hover text-area"/>
+                    <img src="./assets/icons/interface-icons/cloud-upload.svg" alt="">
+                    Clique aqui para <br>selecionar arquivos
+                  </label>
+      
+                  
+
                 </div>
               </fieldset>
               
 
-              <fieldset>
-                <legend>Endereço residencial</legend>
+              <fieldset class="address">
+                <legend class="heading5">Endereço residencial</legend>
 
-                <div class="cep">
-                  <label for="cep">Cep</label>
-                  <input type="text" name="cep" />
+                <div class="cep flex-info ">
+                  <label for="cep" class="label-1">Cep</label>
+                  <input type="text" name="cep" class="hover" />
                 </div>
 
-                <div class="road">
-                  <div>
-                    <label for="rua">Rua</label>
+                <div class="road flex-info-row">
+
+                  <div class="flex-address">
+                    <label for="rua" class="label-1">Rua</label>
                     <input
                       type="text"
                       name="rua"
-                      placeholder="Rua das Flores"
+                      class="flex-small hover"
+                      placeholder="Digite o nome da rua"
+                      required
                     />
                   </div>
 
-                  <div>
-                    <label for="number">Numero</label>
-                    <input type="number" name="number" placeholder="123" />
+                  <div class="flex-address">
+                    <label for="number" class="label-1">Numero</label>
+                    <input type="number" name="number" placeholder="123" class="flex-short hover" required/>
                   </div>
                 </div>
 
-                <div class="state">
-                  <div>
-                    <label for="city">Cidade</label>
-                    <input type="text" name="city" />
+                <div class="state flex-info-row">
+                  <div class="flex-address">
+                    <label for="city" class="label-1">Cidade</label>
+                    <input type="text" name="city" class="flex-small hover" required/>
                   </div>
 
-                  <div>
-                    <label for="state">Estado</label>
-                    <input type="text" name="state" />
+                  <div class="flex-address">
+                    <label for="state" class="label-1">Estado</label>
+                    <input type="text" name="state" class="flex-short hover" readonly/>
                   </div>
                 </div>
               </fieldset>
