@@ -28,19 +28,18 @@
             </p>
           </section>
 
-          <form>
-            <section>
+          <form method="get" enctype="multipart/form-data">
               <fieldset class="kid-information">
                 <legend class="heading5">Informações da criança</legend>
 
                 <div class="name flex-info">
                   <label for="name" class="label-1">Nome Completo</label>
-                  <input type="text" name="name" class="hover" />
+                  <input type="text" name="name" />
                 </div>
 
                 <div class="birth-date flex-info">
                   <label for="birth-date" class="label-1">Data de nascimento</label>
-                  <input type="date" name="birth-date" class="hover" />
+                  <input type="date" id="birth-date" name="birth-date"/>
                 </div>
 
                 <div class="sexo flex-info">
@@ -53,7 +52,7 @@
 
                 <div class="medical-info flex-info">
                   <label for="medical-info" class="label-1">Informações médicas</label>
-                  <textarea name="medica-info" class="hover text-area" placeholder="Informações medicas"></textarea>
+                  <textarea name="medica-info"  id="medical-info" class="hover text-area" placeholder="Informações medicas"></textarea>
                 </div>
 
                 <div class="certificat-birth flex-info">
@@ -102,33 +101,35 @@
                 <div class="state flex-info-row">
                   <div class="flex-address">
                     <label for="city" class="label-1">Cidade</label>
-                    <input type="text" name="city" class="flex-small hover" required/>
+                    <input type="text" name="city" class="flex-small" required/>
                   </div>
 
                   <div class="flex-address">
                     <label for="state" class="label-1">Estado</label>
-                    <input type="text" name="state" class="flex-short hover" required/>
+                    <input type="text" name="state" class="flex-short" required/>
                   </div>
                 </div>
+
               </fieldset>
 
-              <fieldset>
-                <legend>Informações do reponsavel</legend>
+              <fieldset class="responsible">
+                <legend class="heading5">Informações do reponsavel</legend>
 
-                <div class="guardian-name">
-                  <label for="guardian">Nome do reponsavel</label>
-                  <input type="text" name="guardian" />
+                <div class="guardian-wrapp">
+                  <label for="guardian" class="label-1">Nome do reponsavel</label>
+                  <input type="text" id="guardian" name="guardian" />
                   <label for="guardian"
+                  class="label-1"
                     >Principal reponsavel legal em caso de emergencia</label
                   >
                 </div>
 
-                <div class="phone-number">
+                <div class="phone-number guardian-wrapp">
                   <label for="phone-number">Telefone</label>
                   <input type="number" />
                 </div>
 
-                <div class="email">
+                <div class="email guardian-wrapp">
                   <label for="email">E-mail</label>
                   <input type="email" />
                   <label for="email">Insira um e-mail valido</label>
@@ -230,7 +231,6 @@
               </div>
 
             </form>
-          </section>
         </div>
       </section>
 

@@ -1,9 +1,15 @@
 .kid-information {
   border: none;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1.5rem;
+
+  & legend {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .text-area {
-  width: 33rem;
   height: 7.5rem;
   resize: none;
 }
@@ -13,26 +19,23 @@
   height: 3rem;
 }
 
+.label-birth {
+  border: 1px dashed var(--stroke-default);
+  border-radius: 8px;
+  display: flex;
+  height: 9.6875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.label-birth:hover {
+  border: 2px dashed var(--stroke-highlight);
+  background-color: var(--stroke-highlight-transparent);
+}
 
-  .label-birth {
-    width: 33rem;
-    height: 10rem;
-    border: 1px dashed var(--stroke-default);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .label-birth:hover {
-    border: 2px dashed var(--stroke-highlight);
-    background-color: var(--stroke-highlight-transparent);
-  }
-
-  .certificat-birth {
+.certificat-birth {
   position: relative;
 
   & input {
@@ -44,11 +47,27 @@
   }
 }
 
-.label-birth{
-      &:hover, &:has(input:focus) {
-
-      border: 2px dashed var(--stroke-highlight);
+.label-birth {
+  &:hover,
+  &:has(input:focus) {
+    border: 2px dashed var(--stroke-highlight);
     background-color: var(--stroke-highlight-transparent);
-    
   }
 }
+
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    background-image: url(../assets/icons/interface-icons/calendar-03.svg);
+    background-size: contain;
+    background-position: center;
+    right: 1rem;
+    cursor: pointer;
+
+  }
+}
+
+/* esta forçando o calendario a pegar o focus que antes era aplicado apenas no input */
+

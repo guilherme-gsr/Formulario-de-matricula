@@ -3,6 +3,7 @@
 @import url(../css/kid-info.css);
 @import url(../global/components.css);
 @import url(../css/address.css);
+@import url(../css/responsible.css);
 :root {
   --brand-light: #f67841;
   --brand-mid: #f3541c;
