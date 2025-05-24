@@ -81,32 +81,33 @@
 
                 <div class="road flex-info-row">
                   
-                  <div class="flex-address">
-                    <label for="rua" class="label-1">Rua</label>
+                  <div class="flex-address flex-2">
+                    <label for="rua" class="heading-disabled">Rua</label>
                     <input
                       type="text"
                       name="rua"
                       class="flex-small hover"
-                      placeholder="Digite o nome da rua"
-                      required
+                      placeholder="Rua das flores"      
+                      disabled
                     />
                   </div>
 
-                  <div class="flex-address">
+                  <div class="flex-address flex-1">
                     <label for="number" class="label-1">Numero</label>
                     <input type="number" name="number" placeholder="123" class="flex-short hover" required/>
                   </div>
+
                 </div>
 
                 <div class="state flex-info-row">
-                  <div class="flex-address">
-                    <label for="city" class="label-1">Cidade</label>
-                    <input type="text" name="city" class="flex-small" required/>
+                  <div class="flex-address flex-2">
+                    <label for="city" class="heading-disabled">Cidade</label>
+                    <input type="text" name="city" class="flex-small" placeholder="São Paulo" disabled/>
                   </div>
 
-                  <div class="flex-address">
-                    <label for="state" class="label-1">Estado</label>
-                    <input type="text" name="state" class="flex-short" required/>
+                  <div class="flex-address flex-1">
+                    <label for="state" class="heading-disabled">Estado</label>
+                    <input type="text" name="state" class="flex-short" placeholder="SP" disabled/>
                   </div>
                 </div>
 
@@ -116,7 +117,7 @@
                 <legend class="heading5">Informações do reponsavel</legend>
 
                 <div class="guardian-wrapp">
-                  <label for="guardian" class="label-1">Nome do reponsavel</label>
+                  <label for="guardian" class="heading-disabled">Nome do reponsavel</label>
                   <input type="text" id="guardian" name="guardian" />
                   <label for="guardian"
                   class="label-1"
@@ -131,96 +132,110 @@
 
                 <div class="email guardian-wrapp">
                   <label for="email">E-mail</label>
-                  <input type="email" />
+                  <input type="email" pattern=".+@gmail.com"/>
                   <label for="email">Insira um e-mail valido</label>
                 </div>
               </fieldset>
 
-              <fieldset>
-                <legend>Opções de matrícula</legend>
-
+              <fieldset class="options-enrollment">
+                <legend class="heading5">Opções de matrícula</legend>
+ 
                 <div class="turno">
                   <label for="turno">Selecione o turno de estudo</label>
-                  <div class="manha">
-                    <input type="radio" value="manha" name="turno">
-                    <img src="./assets/icons/ilustration-icons/sun-cloud-02.svg" alt="sun-cloud">
+
+                  <div class="radio-wrapper">
+
+                    <div class="input-inner">
+                      <div class="radio-inner"></div>
+                      <div class="radio-image"></div>
+                    <input type="radio" value="manha" name="turno" id="manha">
+                    <img src="assets/icons/ilustration-icons/sun-cloud-02.svg" alt="icone de sol com nuvem">
                     <label for="manha">Manhã</label>
                   </div>
 
-                  <div class="tarde">
-                    <input type="radio" value="tarde" name="turno">
-                    <img src="./assets/icons/ilustration-icons/sun-02.svg" alt="tarde">
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                      <div class="radio-image"></div>
+                    <input type="radio" value="tarde" name="turno" id="tarde">
+                    <img src="assets/icons/ilustration-icons/sun-02.svg" alt="">
                     <label for="tarde">Tarde</label>
-                  </div>
-                  
-                  
+                </div>
+
                 </div>
 
                 <div class="sports">
 
                   <label for="sports">Em qual esporte voce gostaria de matricular seu filho(a)?</label>
-            
-                  <div class="checkbox-sports">
-                    
+
+                  <div class="radio-wrapper-sports">
+
+                    <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="futebol">
                     <img src="./assets/icons/ilustration-icons/football.svg" alt="Futebol">
                     <label for="sports">Futebol</label>
                   
                   </div>
 
-                  <div class="checkbox-sports">
-                    
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="basquete">
                     <img src="./assets/icons/ilustration-icons/basketball-02.svg" alt="basquete">
                     <label for="sports">Basquete</label>
                   
                   </div>
 
-                  <div class="checkbox-sports">
-                    
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="natacao">
                     <img src="./assets/icons/ilustration-icons/swimming.svg" alt="Natacao">
                     <label for="sports">Natação</label>
                   
                   </div>
 
-                  <div class="checkbox-sports">
-                    
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="yoga">
                     <img src="./assets/icons/ilustration-icons/yoga-02.svg" alt="Yoga">
                     <label for="sports">Yoga</label>
                   
                   </div>
 
-                  <div class="checkbox-sports">
-                    
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="volley">
                     <img src="./assets/icons/ilustration-icons/volleyball.svg" alt="Volley">
                     <label for="sports">Volley</label>
                   
                   </div>
 
-                  <div class="checkbox-sports">
-                    
+                  <div class="input-inner">
+                    <div class="radio-inner"></div>
+                    <div class="radio-image"></div>
                     <input type="checkbox" name="sports" value="boxing">
                     <img src="./assets/icons/ilustration-icons/boxing-glove-01.svg" alt="Boxing">
                     <label for="sports">Boxing</label>
                   
                   </div>
-                  
-
+                  </div>
+            
                 </div>
 
 
               </fieldset>
 
               <div class="termos">
-
+                <div class="flex-terms">
+                  <div class="radio-image-terms"></div>
                 <input type="checkbox">
-                <h1>Declaro que li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. </h1>
-
-
+                <h1 class="heading4">Declaro que li e concordo com os <span class="span">Termos e Condições</span> e com a <span class="span">Política de Privacidade</span> da escola Estrela do Amanhã. </h1>
               </div>
+                </div>
 
               <div  class="forms-action">
 

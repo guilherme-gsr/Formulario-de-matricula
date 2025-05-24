@@ -1,0 +1,53 @@
+.termos{
+    margin-top: 3rem;
+}
+
+.flex-terms{
+    position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset:0;
+  }
+
+   .radio-image-terms{
+    background-image: url(../assets/icons/square-default.svg);
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    /* top: .5rem;
+    left: .5rem; */
+  }
+
+   &:hover, &:focus-within{
+    & .radio-image-terms{
+        background-image: url(../assets/icons/square-hover.svg);
+    }
+  }
+
+  &:has(:checked){
+    & .radio-image-terms{
+        background-image: url(../assets/icons/square-checked.svg);
+    }
+  }
+
+  & h1{
+    margin-left: 30px;
+  }
+
+}
+
+
+.forms-action{
+    background-color: red;
+    margin-top: 3rem;
+    height: 4rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
