@@ -1,18 +1,18 @@
-.termos{
-    margin-top: 3rem;
+.termos {
+  margin-top: 3rem;
 }
 
-.flex-terms{
-    position: relative;
+.flex-terms {
+  position: relative;
   & input,
   & input:focus,
   & input:hover {
     all: unset;
     position: absolute;
-    inset:0;
+    inset: 0;
   }
 
-   .radio-image-terms{
+  .radio-image-terms {
     background-image: url(../assets/icons/square-default.svg);
     background-repeat: no-repeat;
     width: 1.5rem;
@@ -22,32 +22,66 @@
     left: .5rem; */
   }
 
-   &:hover, &:focus-within{
-    & .radio-image-terms{
-        background-image: url(../assets/icons/square-hover.svg);
+  &:hover,
+  &:focus-within {
+    & .radio-image-terms {
+      background-image: url(../assets/icons/square-hover.svg);
     }
   }
 
-  &:has(:checked){
-    & .radio-image-terms{
-        background-image: url(../assets/icons/square-checked.svg);
+  &:has(:checked) {
+    & .radio-image-terms {
+      background-image: url(../assets/icons/square-checked.svg);
     }
   }
 
-  & h1{
+  & h1 {
     margin-left: 30px;
   }
-
 }
 
+.forms-action {
+  margin-top: 3rem;
+  height: 4rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
 
-.forms-action{
-    background-color: red;
-    margin-top: 3rem;
-    height: 4rem;
-    display: flex;
-    gap: 1rem;
-    flex-direction: row;
-    justify-content: end;
-    align-items: end;
+.width-buttom {
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+}
+
+.primary-buttom {
+  border: 2px solid var(--text-highlight);
+  border-radius: 0.5rem;
+  background-color: white;
+
+  & {
+    color: var(--text-highlight);
+    font-weight: 500;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0.25rem #fee7d6;
+} 
+}
+
+.secondary-buttom {
+  border: 2px solid var(--brand-dark);
+  border-radius: 0.5rem;
+  background-color: var(--brand-dark);
+
+  & {
+    color: white;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: var(--brand-mid);
+    border: 2px solid var(--brand-mid);
+} 
 }

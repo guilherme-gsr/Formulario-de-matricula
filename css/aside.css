@@ -1,0 +1,55 @@
+
+.aside{
+}
+
+.title-aside-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        & h1{
+            font-size: 2.5rem;
+
+            & span{
+                color: var(--text-highlight);
+            }
+        }
+    }
+
+    & .title-text{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        & h3{
+            font-family: Schoolbell;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+
+    }
+}
+
+
+
+.img-aside{
+    margin-top: 2rem;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+  @media (max-width:792px) {
+             .title-aside-container{
+                margin-top: 1px;
+             }
+    }
