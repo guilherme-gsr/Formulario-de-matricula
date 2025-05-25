@@ -15,3 +15,4 @@ Estilização moderna utilizando apenas CSS puro.
 
 Layout responsivo para diferentes tamanhos de tela.
 
+![preview](assets/preview.png)
